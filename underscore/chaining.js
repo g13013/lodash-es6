@@ -7,8 +7,19 @@
  * Available under MIT license <http://lodash.com/license>
  */
 
-export { default as chain } from 'chain';
-export { default as tap } from 'tap';
-export { default as value } from 'wrapperValueOf';
-export { default as wrapperChain } from 'wrapperChain';
-export { default as wrapperValueOf } from 'wrapperValueOf';
+var chaining = {};
+
+import chain from 'chain';
+chaining.chain = chain;
+import tap from 'tap';
+chaining.tap = tap;
+import value from 'wrapperValueOf';
+chaining.value = value;
+import wrapperChain from 'wrapperChain';
+chaining.wrapperChain = wrapperChain;
+import wrapperToString from 'wrapperToString';
+chaining.wrapperToString = wrapperToString;
+import wrapperValueOf from 'wrapperValueOf';
+chaining.wrapperValueOf = wrapperValueOf;
+
+export default chaining;

@@ -7,8 +7,45 @@
  * Available under MIT license <http://lodash.com/license>
  */
 
-export { default as escape } from 'escape';
-export { default as escapeRegExp } from 'escapeRegExp';
-export { default as template } from 'template';
-export { default as templateSettings } from 'templateSettings';
-export { default as unescape } from 'unescape';
+var strings = {};
+
+import camelCase from 'camelCase';
+strings.camelCase = camelCase;
+import capitalize from 'capitalize';
+strings.capitalize = capitalize;
+import endsWith from 'endsWith';
+strings.endsWith = endsWith;
+import escape from 'escape';
+strings.escape = escape;
+import escapeRegExp from 'escapeRegExp';
+strings.escapeRegExp = escapeRegExp;
+import kebabCase from 'kebabCase';
+strings.kebabCase = kebabCase;
+import pad from 'pad';
+strings.pad = pad;
+import padLeft from 'padLeft';
+strings.padLeft = padLeft;
+import padRight from 'padRight';
+strings.padRight = padRight;
+import repeat from 'repeat';
+strings.repeat = repeat;
+import snakeCase from 'snakeCase';
+strings.snakeCase = snakeCase;
+import startsWith from 'startsWith';
+strings.startsWith = startsWith;
+import template from 'template';
+strings.template = template;
+import templateSettings from 'templateSettings';
+strings.templateSettings = templateSettings;
+import trim from 'trim';
+strings.trim = trim;
+import trimLeft from 'trimLeft';
+strings.trimLeft = trimLeft;
+import trimRight from 'trimRight';
+strings.trimRight = trimRight;
+import truncate from 'truncate';
+strings.truncate = truncate;
+import unescape from 'unescape';
+strings.unescape = unescape;
+
+export default strings;

@@ -7,18 +7,43 @@
  * Available under MIT license <http://lodash.com/license>
  */
 
-export { default as after } from 'after';
-export { default as bind } from 'bind';
-export { default as bindAll } from 'bindAll';
-export { default as callback } from 'createCallback';
-export { default as compose } from 'compose';
-export { default as createCallback } from 'createCallback';
-export { default as debounce } from 'debounce';
-export { default as defer } from 'defer';
-export { default as delay } from 'delay';
-export { default as memoize } from 'memoize';
-export { default as negate } from 'negate';
-export { default as once } from 'once';
-export { default as partial } from 'partial';
-export { default as throttle } from 'throttle';
-export { default as wrap } from 'wrap';
+var functions = {};
+
+import after from 'after';
+functions.after = after;
+import bind from 'bind';
+functions.bind = bind;
+import bindAll from 'bindAll';
+functions.bindAll = bindAll;
+import bindKey from 'bindKey';
+functions.bindKey = bindKey;
+import callback from 'createCallback';
+functions.callback = callback;
+import compose from 'compose';
+functions.compose = compose;
+import createCallback from 'createCallback';
+functions.createCallback = createCallback;
+import curry from 'curry';
+functions.curry = curry;
+import debounce from 'debounce';
+functions.debounce = debounce;
+import defer from 'defer';
+functions.defer = defer;
+import delay from 'delay';
+functions.delay = delay;
+import memoize from 'memoize';
+functions.memoize = memoize;
+import negate from 'negate';
+functions.negate = negate;
+import once from 'once';
+functions.once = once;
+import partial from 'partial';
+functions.partial = partial;
+import partialRight from 'partialRight';
+functions.partialRight = partialRight;
+import throttle from 'throttle';
+functions.throttle = throttle;
+import wrap from 'wrap';
+functions.wrap = wrap;
+
+export default functions;

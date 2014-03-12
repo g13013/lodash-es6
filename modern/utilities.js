@@ -7,22 +7,45 @@
  * Available under MIT license <http://lodash.com/license>
  */
 
-export { default as callback } from 'createCallback';
-export { default as constant } from 'constant';
-export { default as createCallback } from 'createCallback';
-export { default as escape } from 'escape';
-export { default as identity } from 'identity';
-export { default as matches } from 'matches';
-export { default as mixin } from 'mixin';
-export { default as noConflict } from 'noConflict';
-export { default as noop } from 'noop';
-export { default as now } from 'now';
-export { default as parseInt } from 'parseInt';
-export { default as property } from 'property';
-export { default as random } from 'random';
-export { default as result } from 'result';
-export { default as template } from 'template';
-export { default as templateSettings } from 'templateSettings';
-export { default as times } from 'times';
-export { default as unescape } from 'unescape';
-export { default as uniqueId } from 'uniqueId';
+var utilities = {};
+
+import callback from 'createCallback';
+utilities.callback = callback;
+import constant from 'constant';
+utilities.constant = constant;
+import createCallback from 'createCallback';
+utilities.createCallback = createCallback;
+import escape from 'escape';
+utilities.escape = escape;
+import identity from 'identity';
+utilities.identity = identity;
+import matches from 'matches';
+utilities.matches = matches;
+import mixin from 'mixin';
+utilities.mixin = mixin;
+import noConflict from 'noConflict';
+utilities.noConflict = noConflict;
+import noop from 'noop';
+utilities.noop = noop;
+import now from 'now';
+utilities.now = now;
+import parseInt from 'parseInt';
+utilities.parseInt = parseInt;
+import property from 'property';
+utilities.property = property;
+import random from 'random';
+utilities.random = random;
+import result from 'result';
+utilities.result = result;
+import template from 'template';
+utilities.template = template;
+import templateSettings from 'templateSettings';
+utilities.templateSettings = templateSettings;
+import times from 'times';
+utilities.times = times;
+import unescape from 'unescape';
+utilities.unescape = unescape;
+import uniqueId from 'uniqueId';
+utilities.uniqueId = uniqueId;
+
+export default utilities;
